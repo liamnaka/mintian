@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='index.css' media='screen'>
+        <link rel='icon' href='mintian_logo_small.png'>
+        <title>Mintian Capital</title>
+        <meta charset='UTF-8'>
+    </head>
+    <body>
+        <script>
+            let d = new Date();
+            let n = d.getHours();
+            if (n > 19 || n < 5) {
+                document.body.className = ‘night’;
+            }
+            else {
+                document.body.className = ‘day’;
+            }
+        </script>
+        <center>
+        <div>
+            <img id='header' src='mintian_logo_full.png'>
+            <br><br>
+            <p>Mintian Capital is an internally backed fund managed by Kyle Yuan that is located in New York City and makes Early-stage internet and software investments.</p>
+            <p>The fund primarily focuses on marketplaces and network effects businesses.</p>
+            <a href='https://twitter.com/kylecyuan'><p id='subtitle'>Investments</p></a>
+        </div>
+        <div id='links'>
+            <a href='mailto:kyleyuan@mintiancap.com'><img src='gmail.svg' height='30px' class='icon'></a>
+            <a href='https://twitter.com/kylecyuan'><img src='twitter.svg' height='30px' class='icon'></a>
+            <a href='https://medium.com/mintian'><img src='medium.svg' height='30px' class='icon'></a>
+            <a href='https://www.linkedin.com/in/kyleyuan'><img src='linkedin.svg' height='30px' class='icon'></a>
+            <a href='https://mintiancap.com'><img src='angellist.svg' height='30px' class='icon'></a>
+        </div>
+    </body>
+</html>
