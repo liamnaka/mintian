@@ -3,20 +3,25 @@
     <head>
         <link rel='stylesheet' type='text/css' href='index.css' media='screen'>
         <link rel='icon' href='mintian_logo_small.png'>
+        <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Karla">
         <title>Mintian Capital</title>
         <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                const d = new Date();
+                const n = d.getHours();
+                if (n > 19 || n < 5) {
+                    document.documentElement.style.backgroundImage = "url('night_bg.png')";
+                }
+                else {
+                    document.documentElement.style.backgroundImage = "url('day_bg.png')";
+                }
+            });
+        </script>
     </head>
     <body>
-        <script>
-            let d = new Date();
-            let n = d.getHours();
-            if (n > 19 || n < 5) {
-                document.body.className = ‘night’;
-            }
-            else {
-                document.body.className = ‘day’;
-            }
-        </script>
         <center>
         <div>
             <img id='header' src='mintian_logo_full.png'>
@@ -30,7 +35,7 @@
             <a href='https://twitter.com/kylecyuan'><img src='twitter.svg' height='30px' class='icon'></a>
             <a href='https://medium.com/mintian'><img src='medium.svg' height='30px' class='icon'></a>
             <a href='https://www.linkedin.com/in/kyleyuan'><img src='linkedin.svg' height='30px' class='icon'></a>
-            <a href='https://mintiancap.com'><img src='angellist.svg' height='30px' class='icon'></a>
+            <a href='https://angel.co/kyle-yuan-1'><img src='angellist.svg' height='30px' class='icon'></a>
         </div>
     </body>
 </html>

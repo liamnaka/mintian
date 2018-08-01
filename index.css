@@ -1,15 +1,21 @@
 html {
-    background: url(‘/day_bg.png’);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    height: 100vh;
 }
 
 body {
-    background-size: cover;
     font-smoothing: antialiased;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    font-family: Lucida Grande, Helvetica, sans-serif;
+    font-family: 'Karla', Lucida Grande, Helvetica, sans-serif;
 
     margin-top: auto;
     margin-bottom: auto;
@@ -46,14 +52,4 @@ p {
     margin-top: 0%;
     width: 80vw;
     max-width: 28em;
-}
-
-.day {
-    background: url(‘day_bg.png’);
-    background-color: green;
-}
-
-.night {
-    background: url(‘night_bg.png’);
-    background-color: blue;
 }
