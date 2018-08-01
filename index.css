@@ -30,7 +30,6 @@ body {
 
 #subtitle {
     color: black;
-    position: relative;
     font-size: 1.6em;
     text-decoration: underline
 }
@@ -49,7 +48,6 @@ a:visited {
 p {
     color: black;
     font-size: 1em;
-    position: relative;
     margin-top: 0%;
     width: 80vw;
     max-width: 28em;
